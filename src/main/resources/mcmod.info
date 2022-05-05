@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "autogg",
+    "name": "AutoGG",
+    "description": "Auto GG Mod for Hypixel.net (en, fr)",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://bryth.dev",
+    "updateUrl": "",
+    "authorList": [
+      "Bryth"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
