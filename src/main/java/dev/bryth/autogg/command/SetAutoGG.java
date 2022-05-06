@@ -8,6 +8,8 @@ import net.minecraft.command.ICommandSender;
 import dev.bryth.autogg.handler.ConfigHandler;
 import dev.bryth.autogg.util.MessageUtil;
 
+import java.text.DecimalFormat;
+
 public class SetAutoGG extends CommandBase {
     @Override
     public String getCommandName() {
@@ -40,6 +42,9 @@ public class SetAutoGG extends CommandBase {
             ConfigHandler.setEnabled(!ConfigHandler.enabled);
         }
 
-        MessageUtil.sendMessage(String.format("§dAutoGG %s! §7(delay: %ss)", (ConfigHandler.enabled ? "enabled" : "disabled"), ConfigHandler.delay / 1000));
+        float delay = (float)ConfigHandler.delay / 1000;
+        String delayString = new DecimalFormat("0.###").format(delay);
+
+        MessageUtil.sendMessage(String.format("§dAutoGG %s! §7(delay: %ss)", (ConfigHandler.enabled ? "enabled" : "disabled"), delayString));
     }
 }
