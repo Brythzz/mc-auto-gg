@@ -12,7 +12,7 @@ import dev.bryth.autogg.handler.ConfigHandler;
 import dev.bryth.autogg.handler.EventHandler;
 import dev.bryth.autogg.command.*;
 
-@Mod(modid = "autogg", name = "Auto GG", version = "1.0.0")
+@Mod(modid = "autogg", name = "Auto GG", version = "1.0.1")
 public class AutoGG {
 
     @Mod.EventHandler
