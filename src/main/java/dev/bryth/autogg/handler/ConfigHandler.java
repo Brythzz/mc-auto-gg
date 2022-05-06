@@ -12,7 +12,7 @@ public class ConfigHandler {
 
     public static void setEnabled(boolean enable) {
         Property isEnabled = config.get("config", "enabled", false);
-        isEnabled.set(enabled);
+        isEnabled.set(enable);
         enabled = enable;
         config.save();
     }
