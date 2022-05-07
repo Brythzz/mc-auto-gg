@@ -40,11 +40,6 @@ public class EventHandler {
         String message = event.message.getUnformattedText();
         String unformatted = EnumChatFormatting.getTextWithoutFormattingCodes(message);
 
-        if (triggers == null) {
-            MessageUtil.sendMessage("§eCouldn't get triggers");
-            return;
-        }
-
         boolean isEndMessage = triggers.stream().anyMatch(trigger -> unformatted.contains(trigger) && unformatted.startsWith(" "));
         if (!isEndMessage) return;
 
