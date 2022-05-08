@@ -1,6 +1,5 @@
 package dev.bryth.autogg.handler;
 
-import dev.bryth.autogg.util.MessageUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.event.ClientChatReceivedEvent;
